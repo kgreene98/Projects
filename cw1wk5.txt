@@ -1,0 +1,50 @@
+﻿import java.util.*;
+public class Main
+{
+        public static void main(String[] args) 
+        {
+         Scanner console = new Scanner (System.in);
+                String userResponse;
+                String userName;
+                String passWord;
+                int selection;
+                System.out.println(" Welcome to Shell!! ");
+                System.out.println(" Would you like to use our application? ");
+                userResponse = console.next();
+                if (userResponse.compareToIgnoreCase("Yes")==0)
+                {//begin
+                System.out.println(" You said yes!! Lets create a username and password !");
+                System.out.println(" Username can not be same as password and must be less than 12 characters ");
+                System.out.println(" Please enter your username ");
+                userName = console.next();
+                System.out.println(" Please enter your password! ");
+                passWord = console.next();
+                // end if
+                if (userName.compareToIgnoreCase(passWord)==0 && passWord.length() < 12)
+                System.out.println(" Your password is invalid ");
+                
+                else 
+                {// begin
+                System.out.println(" Valid password ");
+                System.out.println(" Please make a selection ");
+                selection = console.nextInt();
+                //}//end
+                switch (selection)
+                {//begin switch
+                case '1':
+                    System.out.println(" You chose the deluxe car wash ");
+                    break;
+                case '2':
+                    System.out.println(" You chose the normal car wash!! ");
+                    break;
+                
+                
+                default:
+                    System.out.println(" Invalid choice !!");
+                }//end switch
+                }//end outter if
+                else
+                System.out.println(" Goobye!");
+                
+        }
+}
