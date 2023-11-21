@@ -1,0 +1,33 @@
+﻿//Khalil Greene
+//My temp converter
+
+
+//step 1 import scanner class
+
+
+
+
+import java.util.*;
+public class Main
+{
+    //step 2 create input object 
+    
+    static Scanner console = new Scanner(System.in);
+        public static void main(String[] args) {
+        //step 3 declare variables
+        double fahrenheit;
+        double celsius;
+        
+        //step 4 prompt user 
+        
+        System.out.print("Please enter the temperature in fahrenheit and we will convert it to celsius!");
+    //step 5 initialize variables
+    
+    fahrenheit = console.nextDouble();
+    celsius = (fahrenheit - 32) * (5.0/9.0);
+            
+        //step 6 
+        
+        System.out.println(" Your temperature in celsius is " + celsius);
+        }
+}
