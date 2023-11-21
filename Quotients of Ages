@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Main {
+static Scanner input = new Scanner(System.in);
+  public static void main(String[] args) {
+//declare varibles
+int age;
+int num1;
+int num2;
+int quotient = num1/num2;
+//initialize variables
+//securing my Code
+try
+{ //begin try block
+System.out.println(" Please enter your age!!!");
+age = input.nextInt();
+System.out.println(" The age you entered was " + age);
+System.out.println(" Please enter a number " );
+num1 = input.nextInt();
+System.out.println(" The number you entered was " + num1);
+System.out.println(" Please enter another number ");
+num2 = input.nextInt();
+System.out.println(" The second number you entered was " + num2);
+System.out.println(" The quotient of your two numbers is: " + quotient);
+
+
+} //end try block
+catch(InputMismatchException errorMessage)
+{ //begin catch
+System.out.println(" You entered a value that is not correct ");
+} //end catch
+catch(ArithmeticExpression aeRef)
+{ //begin catch
+System.out.println(" You entered a value that can't be divided. ");
+} //end catch
+    
+
+  }
+}
