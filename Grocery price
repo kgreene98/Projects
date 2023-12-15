@@ -1,0 +1,44 @@
+//Khalil Greene September 29 cw3wk5
+//import scanner class
+
+import java.util.*;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+    //create scanner object
+    Scanner console = new Scanner (System.in);
+	//Named constants
+    //declare variables
+    final int sentinel = -999;
+	double priceofGroceries;
+	double totalPrice = 0;
+	int groceryItems = 0;
+	//begin securing code
+	try {//begin try
+	//prompt user
+	System.out.println(" Please enter a grocery price or -999 ");
+	//initialize variables
+	priceofGroceries = console.nextDouble();
+	while (priceofGroceries != sentinel)
+	{//begin while
+	groceryItems ++;
+	totalPrice = totalPrice + priceofGroceries;
+	
+	System.out.println(" Please enter a grocery price or -999 to exit ");
+	priceofGroceries = console.nextDouble();
+	
+	
+	
+	
+	 }//end while
+	// give user data
+	System.out.println(" The number of items you purchased is  " + groceryItems);
+	System.out.println(" The total price of your groceries is  " + totalPrice);
+	} //end try
+	catch (InputMismatchException errorMessage) {//end securing code
+	}
+}
+}
+
