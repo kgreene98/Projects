@@ -1,0 +1,44 @@
+//Khalil Greene
+//september22
+//cw3week4
+//step 1 import scanner class
+import java.util.*;
+
+public class Main {
+//step 2 create scanner object
+static Scanner console = new Scanner(System.in);
+  public static void main(String[] args) {
+//step 3 declare variables
+int userAge;
+char userState;
+
+//secure Code
+try
+{//begin try
+//Step 4 prompt user for age
+    System.out.println(" Welcome to the voting kiosk! ");
+    System.out.println(" Please enter your age! ");
+//allow user input
+userAge = console.nextInt();
+    System.out.println(" Please enter your state with the 'M' for Maryland! ");
+userState = console.next().charAt(0);
+//determine if user age is => 18 and user state us == 'M'
+if ((userAge >= 18)&&(userState == 'M'))
+{//begin if
+    System.out.println(" Eligible to vote! ");
+    System.out.println(" Report to the polling station for registration ! ");
+
+}//end if
+else
+{//begin else
+    System.out.println(" Not eligible to vote in Maryland.. ");
+    System.out.println(" Please exit voting kiosk. ");
+}//end else
+} //end try
+catch(InputMismatchException errorMessage)
+{//begin catch
+    System.out.println(" You entered a value that isn't valid! ");
+}//end catch
+  }
+}
+
