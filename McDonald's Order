@@ -1,0 +1,54 @@
+//Khalil Greene
+//September11
+//Classwork 
+//Agboli
+//step 1 import my scanner class
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+//step 2 create my input stream object
+ Scanner console = new Scanner(System.in);
+//step 3 declare variables
+final double burgerPrice = 1.69;
+final double friesPrice = 1.09;
+final double sodaPrice = .99;
+final double taxRate = .065;
+String customerName;
+String customerLocation;
+int numBurgers;
+int numSodas;
+int numFries;
+double total;
+double totalpreTax;
+double totalpostTax;
+double taxAmount;
+
+//step 4 initialize my variables by reading data from user
+		System.out.println(" Welcome to McDonalds!! ");
+		System.out.println(" Enter a name for the order ");
+		customerName = console.nextLine();
+		
+		System.out.println("Where are you located??");
+		customerLocation = console.nextLine();
+		
+		System.out.println(" Welcome " + customerName + " to McDonalds in " + customerLocation);
+		
+		System.out.println(" Enter number of burgers: ");
+		numBurgers = console.nextInt();
+		
+		System.out.println(" Please enter number of fries: ");
+		numFries = console.nextInt();
+		
+		System.out.println(" Please enter number of sodas: ");
+		numSodas = console.nextInt();
+		totalpreTax = (numBurgers * burgerPrice) + (numFries * friesPrice) + (numSodas * sodaPrice);
+		taxAmount = (totalpreTax * taxRate);
+		totalpostTax = (totalpreTax + taxAmount);
+		System.out.println(" Your total " + customerName + " before tax is " + totalpreTax);
+		System.out.println(" Your total " + customerName + " after tax is " + totalpostTax);
+		
+	}
+}
+
+
