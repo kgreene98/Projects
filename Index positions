@@ -1,0 +1,19 @@
+//Khalil Greene
+//September 13
+//Classwork
+import java.util.*;
+public class Main
+{
+    static Scanner console = new Scanner(System.in);
+	public static void main(String[] args) {
+	    String sentence;
+		System.out.println(" Enter a sentence. ");
+		sentence = console.nextLine();
+		System.out.print(" The length is " + sentence.length());
+		System.out.println(" The character at 16 is " + sentence.charAt(16));
+		System.out.println(" The index position of t is " + sentence.indexOf('t'));
+		System.out.println(" The substring of characters 1-10 is " + sentence.substring(1,10));
+		
+		
+	}
+}
