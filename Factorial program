@@ -1,0 +1,24 @@
+//Khalil Greene October 8 Homework5
+//import scanner class
+import java.util.*;
+public class Main
+{
+    //create scanner Object 
+    static Scanner console = new Scanner(System.in);
+	public static void main(String[] args) {
+	    //create variables
+	    int num;
+	    
+	    int fact = 1;
+	    System.out.println(" Enter a number ");
+	    //initialize variables
+	    num = console.nextInt();
+	    for (int i = 1; i <= num; i++)
+		{//begin for
+		fact = fact * i;
+		
+		
+		}//end for 
+		System.out.println(" Factorial of the number: " + fact);
+	}
+}
