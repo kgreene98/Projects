@@ -1,0 +1,39 @@
+//Khalil Greene October 5th cw3wk6B
+//import scanner class
+//Khalil Greene October 4th cw3wk6
+//step 1 import scanner class
+import java.util.*;
+public class Main
+{
+    //create object
+    static Scanner console = new Scanner(System.in);
+	public static void main(String[] args) {
+	    //declare variables
+	    int limit;
+	    int i = 0;
+	    int number;
+	    //prompt user for number of values
+	System.out.println(" How many numbers would you like to enter? ");
+	//initialize variables
+	limit = console.nextInt();
+	
+	//use for loop 
+	
+	for (i = 0; i < limit; i++)
+	{//begin for 
+	System.out.println(" Enter a number and we will determine if it is even or odd! ");
+	number = console.nextInt();
+	//use modulus to determine if the number is even or odd
+	// use if statement to determine
+	if (number % 2 == 1)
+	System.out.println(" The number is odd. ");
+	//use else to make the other determination
+	else 
+	System.out.println(" The number is even. ");
+	
+	
+	}//end for
+	}
+}
+
+
