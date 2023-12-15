@@ -1,0 +1,33 @@
+//September 13
+//Classwork
+//Agboli
+//import class
+import java.util.*;
+public class Main
+{
+    //create object and associate
+    static Scanner console = new Scanner(System.in);
+	public static void main(String[] args) {
+	    //intialize variables
+	    final double priceofMilk = 4.50;
+	    final double priceofBread = 2.67;
+	    final double priceofButter = 2.89;
+	    //declare variables
+	    int numMilk;
+	    int numBread;
+	    int numButter;
+	    //prompt User
+		System.out.println(" Please enter the number of milks you purchased. ");
+		numMilk = console.nextInt();
+		System.out.println(" Please enter the number of loaves you purchased. ");
+		numBread = console.nextInt();
+		System.out.println(" Please enter the number of butters you purchased. ");
+		numButter = console.nextInt();
+		//find total 
+		double total = (numMilk * priceofMilk) + (numBread * priceofBread) + (numButter * priceofButter);
+		//format to 2 decimal places
+		System.out.printf(" The total to 2 decimal places is %.2f ",total);
+		
+	}
+}
+
