@@ -1,0 +1,42 @@
+//Khalil Greene October 2 cw1wk6
+// import scanner
+import java.util.*;
+
+public class Main
+{
+    //create object
+	static Scanner console = new Scanner (System.in);
+	public static void main(String[] args) {
+	    //declare variables
+		int userResponse;
+		int i = 0;
+		int minValue;
+		int maxValue;
+		int randomNum;
+		int sum = 0;
+		try {//start try
+		System.out.println(" How many numbers should we generate? ");
+		//initialize variables
+		userResponse = console.nextInt();
+		
+		System.out.println(" What is the highest number we can generate? ");
+		maxValue = console.nextInt();
+		
+		System.out.println(" What is the lowest number we can generate? ");
+		minValue = console.nextInt();
+		
+		while (i < userResponse)
+		{//begin while
+		randomNum = minValue + (int) (Math.random() * (maxValue - minValue));
+		System.out.println(" The random numbers between " + minValue + " and " + maxValue + " is " + randomNum);
+		i++;//update LCV
+		
+		
+		}//end while
+		}//end try
+		catch (InputMismatchException errorMessage) {
+		//end catch
+		}
+	}
+}
+
