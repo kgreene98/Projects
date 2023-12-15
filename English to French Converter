@@ -1,0 +1,83 @@
+//Khalil Greene finalpartB October 20
+public class Main
+{
+	public static void main(String[] args) 
+	{//begin main method 
+	HelloMessage();
+	int x = 11;
+	while (x <= 20)
+	{//begin while
+	System.out.println(" The French number for " + x + " is " + French2Eng(x));
+	x++;
+	
+	
+	}//end while
+	GoodbyeMessage();
+	
+	
+	
+	
+	}//end main
+	    //create my method here 
+	public static String French2Eng (int x) //method heading!!! 
+	{//begin method
+	switch (x)
+	    {//begin switch
+	case 11: 
+	    return "Onze";
+	    
+	case 12:
+	    return "Donze";
+	case 13:
+	    return "Treize";
+	case 14:
+	    return "Quinze";
+	    
+	case 15: 
+	    return "Quinze";
+	    
+	case 16:
+	    return "Seize";
+	    
+	case 17:
+	    return "Dix-sept";
+	    
+	case 18: 
+	    return "Dix-huit";
+	    
+	case 19:
+	    return "Dix-neuf";
+	    
+	case 20: 
+	    return "Vingt";
+	    
+	default:
+	    return "Invalid";
+	    
+	    }//end switch
+	    
+	}//end method	
+	
+	
+	
+	//begin hello method
+	public static void HelloMessage()
+	{//begin HelloMessage
+	System.out.println(" Welcome to Khalil's French to English Converter 11-20!! ");
+	}//end hello 
+	
+	
+	//begin bye 
+	public static void GoodbyeMessage()
+	{//begin 
+	System.out.println(" Goodbye, hope you were serviced! ");
+	
+	}//end
+	
+	
+	
+	
+	
+	
+}
+
